@@ -28,6 +28,11 @@ KEYTIMEOUT=1 # corresponds to 10ms
 # Use vim as the editor
 export EDITOR=vim
 
+# Ensure UTF-8 locale so ncurses TUIs (btop, etc.) render box-drawing
+# characters instead of falling back to raw VT100 ACS letters
+export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
+
 # Use vim style line editing in zsh
 bindkey -v
 # Movement
